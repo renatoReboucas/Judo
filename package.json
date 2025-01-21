@@ -7,7 +7,7 @@
     "clean": "rimraf dist",
     "dev": "tsx watch --env-file .env src/http/server.ts",
     "build": "npm run clean && tsc -p tsconfig.json && tsc-alias",
-    "start": "node src/http/server.ts"
+    "start": "node src/http/server.js"
   },
   "keywords": [],
   "author": "",
@@ -16,6 +16,8 @@
     "@biomejs/biome": "^1.9.4",
     "@types/bcrypt": "^5.0.2",
     "@types/node": "^22.10.7",
+    "@types/pg": "^8.11.10",
+    "drizzle-kit": "^0.30.2",
     "tsx": "^4.19.2",
     "typescript": "^5.7.3"
   },
@@ -25,8 +27,10 @@
     "bcrypt": "^5.1.1",
     "dayjs": "^1.11.13",
     "dotenv": "^16.4.7",
+    "drizzle-orm": "^0.38.4",
     "fastify": "^5.2.1",
     "fastify-type-provider-zod": "^4.0.2",
+    "pg": "^8.13.1",
     "ts-node": "^10.9.2",
     "tsc-alias": "^1.8.10",
     "tsconfig-paths": "^4.2.0",
