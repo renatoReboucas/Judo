@@ -2,7 +2,7 @@ import { prisma } from '@/lib/prisma'
 import { compararSenha } from '@/utils/passwordUtils'
 import { type FastifyInstance } from 'fastify'
 
-export async function loginClienteRoutes(app: FastifyInstance) {
+export async function loginRoutes(app: FastifyInstance) {
   // app.addHook('preHandler', async (request) => {
   //   await request.jwtVerify()
   // })

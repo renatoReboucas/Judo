@@ -7,6 +7,7 @@ import {
   validatorCompiler,
   type ZodTypeProvider,
 } from 'fastify-type-provider-zod'
+import { loginRoutes } from '@/routes/Login'
 
 const app = fastify({ logger: true }).withTypeProvider<ZodTypeProvider>()
 app.setValidatorCompiler(validatorCompiler)
@@ -23,6 +24,8 @@ app.register(jwt, {
 app.get('/ping', async () => {
   return { ping: 'pong' }
 })
+
+app.register(loginRoutes, { prefix: 'v1/login' })
 
 app
   .listen({
