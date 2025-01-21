@@ -6,7 +6,7 @@
   "scripts": {
     "clean": "rimraf dist",
     "dev": "tsx watch --env-file .env src/http/server.ts",
-    "build": "npm run clean && tsc -p tsconfig.json && tsc-alias",
+    "build": "tsc -p tsconfig.json && tsc-alias",
     "start": "node src/http/server.js"
   },
   "keywords": [],
