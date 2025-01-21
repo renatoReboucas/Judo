@@ -5,7 +5,7 @@
 
 # Node artifact files
 node_modules/
-dist/
+# dist/
 
 # Compiled Java class files
 *.class
@@ -21,7 +21,7 @@ dist/
 
 # Maven
 target/
-dist/
+# dist/
 
 # JetBrains IDE
 .idea/
@@ -52,7 +52,7 @@ yarn-error.log
 build/
 .env
 dev.db
-dist
+# dist
 files/*
 csv/*
 logs/*
